@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="notification">
-        <img id="notification-image" src="/Images/Persona.jpeg" alt="Persona">
+        <img id="notification-image" src="Images/Persona.jpeg" alt="Persona">
         <span id="notification-message">This is a notification</span>
         <button id="close-btn">&times;</button>
     </div>
@@ -25,7 +25,7 @@
 
             notificationMessage.innerText = message;
             notification.style.backgroundColor = bgColor;
-            notificationImage.src = imageUrl;
+            notificationImage.src = "Images/Persona.jpeg";
             notification.style.display = 'flex';
 
             // Clear any previous timeout to avoid overlapping timers
@@ -70,7 +70,7 @@
 
             setInterval(() => {
                 const { text, color } = messages[index];
-                showNotification(text, color, "/Images/Persona.jpeg");
+                showNotification(text, color, "Images/Persona.jpeg");
                 index = (index + 1) % messages.length;
             }, 10000); // Show notification every 10 seconds
         }
