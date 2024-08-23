@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Users/wse/Code/CCAMBan/styles/NotificationStyles.css">
+    <title>Periodic Notifications</title>
+
+</head>
+<body>
+    <div id="notification">
+        <img id="notification-image" src="Images/Persona.jpeg" alt="Persona">
+        <span id="notification-message">This is a notification</span>
+        <button id="close-btn">&times;</button>
+    </div>
+
+    <script>
+        let notificationTimeout;
+
+        // Function to show the notification with custom color
+        function showNotification(message, bgColor, imageUrl) {
+            const notification = document.getElementById('notification');
+            const notificationMessage = document.getElementById('notification-message');
+            const notificationImage = document.getElementById('notification-image');
+
+            notificationMessage.innerText = message;
+            notification.style.backgroundColor = bgColor;
+            notificationImage.src = "Images/Persona.jpeg";
+            notification.style.display = 'flex';
+
+            // Clear any previous timeout to avoid overlapping timers
+            clearTimeout(notificationTimeout);
+
+            // Hide the notification after 5 seconds
+            notificationTimeout = setTimeout(() => {
+                notification.style.display = 'none';
+            }, 5000);
+        }
+
+        // Function to start periodic notifications
+        function startNotifications() {
+            const messages = [
+                { text: "You are capable of amazing things!", color: "#007BFF" }, // Blue
+                { text: "Believe in yourself and all that you are.", color: "#28A745" }, // Green
+                { text: "Every day is a fresh start.", color: "#FFC107" }, // Yellow
+                { text: "Keep pushing forward; you're doing great!", color: "#DC3545" }, // Red
+                { text: "Your potential is limitless.", color: "#6F42C1" }, // Purple
+                { text: "Embrace the journey, not just the destination.", color: "#17A2B8" }, // Cyan
+                { text: "You are stronger than you think.", color: "#6610F2" }, // Indigo
+                { text: "Success is the sum of small efforts repeated daily.", color: "#E83E8C" }, // Pink
+                { text: "Happiness is found within.", color: "#20C997" }, // Teal
+                { text: "Your hard work will pay off!", color: "#FD7E14" }, // Orange
+                { text: "Stay positive, work hard, make it happen.", color: "#FF5C5C" }, // Coral
+                { text: "You have the power to create change.", color: "#FF5733" }, // Light red
+                { text: "Be the reason someone smiles today.", color: "#3D9970" }, // Olive green
+                { text: "Good things take time, be patient.", color: "#6C757D" }, // Gray
+                { text: "Your positivity is contagious!", color: "#343A40" }, // Dark gray
+                { text: "You are enough, just as you are.", color: "#007BFF" }, // Blue
+                { text: "Small steps lead to big changes.", color: "#28A745" }, // Green
+                { text: "Your mindset determines your success.", color: "#FFC107" }, // Yellow
+                { text: "Today is a great day to be happy.", color: "#DC3545" }, // Red
+                { text: "You are capable of more than you know.", color: "#6F42C1" }, // Purple
+                { text: "Let your dreams be bigger than your fears.", color: "#17A2B8" }, // Cyan
+                { text: "Keep going, you're closer than you think.", color: "#6610F2" }, // Indigo
+                { text: "Every day is a new opportunity.", color: "#E83E8C" }, // Pink
+                { text: "Your future is bright, keep shining!", color: "#20C997" } // Teal
+            ];
+
+            let index = 0;
+
+            setInterval(() => {
+                const { text, color } = messages[index];
+                showNotification(text, color, "Images/Persona.jpeg");
+                index = (index + 1) % messages.length;
+            }, 10000); // Show notification every 10 seconds
+        }
+
+        // Function to close the notification
+        document.getElementById('close-btn').onclick = function() {
+            document.getElementById('notification').style.display = 'none';
+            clearTimeout(notificationTimeout); // Stop any ongoing timer
+        }
+
+        // Start the notifications when the page loads
+        window.onload = startNotifications;
+    </script>
+</body>
+</html>
