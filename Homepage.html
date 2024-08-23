@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
@@ -18,8 +19,47 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>MY BLOG</b></h1>
-  <p>Welcome to the blog of <span class="w3-tag">unknown</span></p>
+  <h1><b>Sky Bridge</b></h1>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Meet the Previous Grads
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Technology Grads</a></li>
+              <li><a class="dropdown-item" href="#">Cyber Grads</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sky Knowledge Bank</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">All you need to know about agile</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Navigating Sky
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Osterley</a></li>
+              <li><a class="dropdown-item" href="#">Livingston</a></li>
+              <li><a class="dropdown-item" href="#">Leeds</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </header>
 
 <!-- Grid -->
@@ -31,7 +71,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   <div class="w3-card-4 w3-margin w3-white">
     <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b>TITLE HEADING</b></h3>
+      <h3><b>WELCOME TO SKY</b></h3>
       <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
     </div>
 
@@ -42,9 +82,6 @@ and is wrapped around the whole page content, except for the footer in this exam
         <div class="w3-col m8 s12">
           <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
         </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
-        </div>
       </div>
     </div>
   </div>
@@ -54,7 +91,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   <div class="w3-card-4 w3-margin w3-white">
   <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
     <div class="w3-container">
-      <h3><b>BLOG ENTRY</b></h3>
+      <h3><b>ABOUT THIS WEBSITE</b></h3>
       <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
     </div>
 
@@ -63,11 +100,8 @@ and is wrapped around the whole page content, except for the footer in this exam
         tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
-        </div>
+            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          </div>
       </div>
     </div>
   </div>
@@ -80,15 +114,42 @@ and is wrapped around the whole page content, except for the footer in this exam
   <div class="w3-card w3-margin w3-margin-top">
   <img src="/w3images/avatar_g.jpg" style="width:100%">
     <div class="w3-container w3-white">
-      <h4><b>My Name</b></h4>
-      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+      <h4><b>TELL US ABOUT YOU</b></h4>
+      <form action="#" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+<br>
+        <label for="gradtype">Scheme:</label>
+        <input type="text" id="role" name="role" placeholder="Enter your scheme(e.g., Technology Grad, Cyber Grad, etc.)" required>
+<br>
+        <label for="JoinYear">Joining Year:</label>
+        <input type="number" id="JoinYear" name="JoinYear" placeholder="(e.g.2024)" required>
+<br>
+        <label for="excitement">What are you most excited about in joining Sky?</label>
+        <textarea id="excitement" name="excitement" rows="4" placeholder="Share your excitement!" required></textarea>
+<br>
+        <label for="interests">Roles you might be interested in:</label>
+        <select id="interests" name="interests" required>
+            <option value="">Select a role</option>
+            <option value="Software Development">option1</option>
+            <option value="Project Management">option2</option>
+            <option value="Data Analysis">option3</option>
+            <option value="Marketing">option4</option>
+        </select>
+<br>
+        <label for="funFact">Fun Fact About You:</label>
+        <input type="text" id="funFact" name="funFact" placeholder="Share a fun fact about yourself" required>
+
+        <input type="submit" value="Submit">
+    </form>
     </div>
   </div><hr>
   
   <!-- Posts -->
   <div class="w3-card w3-margin">
     <div class="w3-container w3-padding">
-      <h4>Popular Posts</h4>
+      <h4>RECENT POSTS</h4>
     </div>
     <ul class="w3-ul w3-hoverable w3-white">
       <li class="w3-padding-16">
@@ -118,7 +179,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- Labels / tags -->
   <div class="w3-card w3-margin">
     <div class="w3-container w3-padding">
-      <h4>Tags</h4>
+      <h4>Navigation</h4>
     </div>
     <div class="w3-container w3-white">
     <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
@@ -143,7 +204,6 @@ and is wrapped around the whole page content, except for the footer in this exam
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
   <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 </body>
