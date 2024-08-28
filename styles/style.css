@@ -269,6 +269,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   #glossaryTable tr.header, #glossaryTable tr:hover {
     /* Add a grey background color to the table header and on hover */
     background-color: #f1f1f1;
+<<<<<<< HEAD
   }
 <<<<<<< HEAD
 =======
@@ -277,3 +278,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     padding: 5px;
   }
 >>>>>>> 0177fc3 (Adding files)
+=======
+  }
+>>>>>>> f95a61b (Renaming acronym's page, adding styling and nav bar as well as search feature)
