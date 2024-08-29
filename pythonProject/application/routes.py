@@ -7,7 +7,18 @@ from application import app
 def home():
     return render_template('home.html', title='Home')
 
+@app.route('/meetTheTechGrads')
+def meetTheTechGrads():
+    return render_template('MeetTheTechGrads.html')
+
+@app.route('/meetTheRoles')
+def meetTheRoles():
+    return render_template('MeetTheRoles.html')
+
+@app.route('/skyGlossary')
+def skyGlossary():
+    return render_template('SkyGlossary.html')
 
 @app.route('/Livingston')
-def home():
+def livingston():
     return render_template('Livingston.html', title='Livingston')
