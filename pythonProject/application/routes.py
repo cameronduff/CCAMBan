@@ -20,5 +20,5 @@ def skyGlossary():
     return render_template('SkyGlossary.html')
 
 @app.route('/Livingston')
-def home():
+def livingston():
     return render_template('Livingston.html', title='Livingston')
