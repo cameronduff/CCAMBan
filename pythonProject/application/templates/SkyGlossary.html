@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block body_content %}
+
+    <h1 class="text-center">Sky Knowledge Bank</h1>
+
+    <div class="container-fluid text-center">
+        <!-- Will automate with backend -->
+        <input type="text" id="myInput" onkeyup="tableSearchFunction()" placeholder="Search for terms...">
+        <table id="glossaryTable" class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Term</th>
+                    <th scope="col">Definition</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">API</th>
+                    <td>Application programming interface</td>
+                </tr>
+                <tr>
+                    <th scope="row">BA</th>
+                    <td>Business analyst</td>
+                </tr>
+                <tr>
+                    <th scope="row">PO</th>
+                    <td>Product owner</td>
+                </tr>
+                <tr>
+                    <th scope="row">Agile</th>
+                    <td>The ability to create and respond to change. It is a way of dealing with, and ultimately succeeding in, an uncertain and turbulent environment.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Scrum</th>
+                    <td>A management framework that teams use to self-organize and work towards a common goal</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script>
+        function tableSearchFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("glossaryTable");
+          tr = table.getElementsByTagName("tr");
+
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("th")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        }
+    </script>
+
+{% endblock %}
