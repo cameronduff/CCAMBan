@@ -13,7 +13,7 @@
           filter = input.value.toUpperCase();
           table = document.getElementById("glossaryTable");
           tr = table.getElementsByTagName("tr");
-        
+
           for (i = 0; i < tr.length; i++) {
             td = tr[i].getElementsByTagName("th")[0];
             if (td) {
@@ -67,7 +67,6 @@
     <div class="container-fluid text-center">
         <!-- Will automate with backend -->
         <input type="text" id="myInput" onkeyup="tableSearchFunction()" placeholder="Search for terms...">
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for terms...">
         <table id="glossaryTable" class="table table-striped">
             <thead>
                 <tr>
@@ -101,7 +100,7 @@
 
       <!-- Add footer here -->
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
