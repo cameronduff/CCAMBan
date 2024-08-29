@@ -18,3 +18,7 @@ def meetTheRoles():
 @app.route('/skyGlossary')
 def skyGlossary():
     return render_template('SkyGlossary.html')
+
+@app.route('/Livingston')
+def home():
+    return render_template('Livingston.html', title='Livingston')
