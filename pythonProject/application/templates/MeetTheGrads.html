@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block body_content %}
+  <div class="container">
+      <div class="text-center">
+        <h1>Meet The Grads</h1>
+      </div>
+
+      <div class="row">
+<!--          Spacer column to center the blog section-->
+          <div class="col-1"></div>
+
+        <div class="col-10">
+            <!-- Blog for associate software engineer -->
+            <div class="w3-card-4 w3-margin w3-white">
+              <div class="w3-container">
+                <h3><b>ASSOCIATE SOFTWARE ENGINEER</b></h3>
+                <h5>Sana Jamal, <span class="w3-opacity">23rd August, 2024</span></h5>
+              </div>
+
+              <div class="w3-container">
+                  <p>As a Software Engineer at Sky, you will play a vital role in designing, developing, and maintaining innovative software solutions that enhance our products and services. You will work within a collaborative team environment, applying your technical expertise to create high-quality, scalable, and reliable software systems.</p>
+                  <p>Your responsibilities will include writing and reviewing code, developing new features, and ensuring that software meets performance, security, and reliability standards. You will be involved in all stages of the software development lifecycle, from gathering requirements and designing solutions to testing and deployment.</p>
+                  <p>You will work closely with other engineers, product managers, and stakeholders to understand project requirements and deliver solutions that align with business goals. Your role will involve troubleshooting and resolving technical issues, optimising system performance, and continually improving the software development process.</p>
+                  <p>Staying current with industry trends and emerging technologies will be essential, as you will apply best practices and innovative approaches to solve complex problems and drive continuous improvement.</p>
+                  <p>Your contribution will be crucial in delivering cutting-edge software that supports Sky’s mission to provide exceptional customer experiences and drive business success.</p>
+              </div>
+            </div>
+            <hr>
+
+      <!-- Centered section -->
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="w3-card-4 w3-margin" style="background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px;">
+            <div class="w3-container">
+              <h3 style="border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">Add your experience!</h3>
+              <form>
+                <div class="form-group" style="margin-bottom: 15px;">
+                  <label for="inputJobRole">Job role</label>
+                  <input type="text" class="form-control" id="inputJobRole" style="border-radius: 4px;">
+                </div>
+                <div class="form-group" style="margin-bottom: 15px;">
+                  <label for="inputName">Name</label>
+                  <input type="text" class="form-control" id="inputName" style="border-radius: 4px;">
+                </div>
+                <div class="form-group" style="margin-bottom: 15px;">
+                  <label for="inputJobDescription">Description of role</label>
+                  <textarea class="form-control" id="inputJobDescription" rows="4" style="border-radius: 4px;"></textarea>
+                </div>
+                <button style="padding: 15px; margin-top: 10px; margin-bottom: 10px; width: 100%;" type="submit" class="btn btn-primary btn-lg">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+{% endblock %}
