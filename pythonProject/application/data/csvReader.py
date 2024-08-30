@@ -9,6 +9,7 @@ def read_csv(path):
         for lines in csv_file:
             csv_list.append(lines)
 
+    csv_list.sort()
     return csv_list
 
 
@@ -27,4 +28,4 @@ def find_tags(path):
 
 
 if __name__ == '__main__':
-    print(find_tags('glossary.csv'))
+    print(read_csv('glossary.csv'))

@@ -1,8 +1,8 @@
 3CP,3rd party Content Provider,Content,Media
 3gp,3rd generation platform,Technology,Engineering
-3P,Third Party,Business Management
+3P,Third Party,Business Management,,
 A la carte,TV channel which can be subscribed to on individual basis by DTH sub,Television,Broadcasting
-ABB,Automatic Broadcast Build,Technology,Engineering
+ABB,Automatic Broadcast Build,Technology,Engineering,
 ACE,Application for Capital Expenditure,Finance,Accounting
 ACE,Application Control Engine - Cisco module,Technology,Engineering
 ACT,Association of Commercial Television,Legal/Regulatory
@@ -58,7 +58,7 @@ CA,Customer Advisor,Customer Service,Support
 cache,Computer memory for high-speed retrieval of frequently used/requested data,Technology,Engineering
 CAM,Conditional Access Module,Technology,Engineering
 CAP,Committee of Advertising Practice,Legal/Regulatory
-CATV,Cable Television,Television,Broadcasting
+CATV,Cable Television,Television,Broadcasting,
 CDD,Concept Definition Document,Business Management
 CDN,Content Distribution Network (i.e. Limelight),Internet,Networking
 CDR,Call Data Record,Technology,Engineering

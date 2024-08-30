@@ -3,7 +3,6 @@ from flask import render_template
 from application import app
 from application.data import csvReader
 
-
 @app.route('/')
 @app.route('/home')
 def home():
@@ -20,6 +19,7 @@ def meet_the_roles():
 @app.route('/skyGlossary')
 def sky_glossary():
     glossary_list = csvReader.read_csv('application/data/glossary.csv')
+    tags = csvReader.find_tags('application/data/glossary.csv')
     return render_template('SkyGlossary.html', glossary_list=glossary_list)
 
 @app.route('/Livingston')
