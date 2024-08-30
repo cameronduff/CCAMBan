@@ -26,11 +26,9 @@
                Choosing Your Rotation
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">The Big Decision</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('bigdecision') }}">The Big Decision</a></li>
               <li><a class="dropdown-item" href="{{ url_for('meetTheRoles') }}">Potential Roles</a></li>
               <li><a class="dropdown-item" href="#">Sage Advice from Previous Grads</a></li>
-              <li><a class="dropdown-item" href="{{ url_for('meetTheTechGrads') }}">Meet The Tech Grads</a></li>
-              <li><a class="dropdown-item" href="#">Meet The Cyber Grads</a></li>
             </ul>
           </li>
             <li class="nav-item dropdown">
@@ -38,8 +36,8 @@
               Bootcamp Recap
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Agile Fundamentals</a></li>
-              <li><a class="dropdown-item" href="{{ url_for('sky_glossary') }}">Quick Reference Terminology</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('agile') }}">Agile Fundamentals</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('sky_glossary') }}">Sky Knowledge Bank</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -50,6 +48,15 @@
               <li><a class="dropdown-item" href="#">Osterley</a></li>
               <li><a class="dropdown-item" href="{{ url_for('livingston') }}">Livingston</a></li>
               <li><a class="dropdown-item" href="#">Leeds</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sky Community
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{{ url_for('meetTheGrads') }}">Meet The Grads</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('livingston') }}">Meet The Staff</a></li>
             </ul>
           </li>
           <li>
@@ -66,11 +73,16 @@
 {% endblock %}
 
 <!--footer for buttons and copyright-->
-  <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-    <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-    <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
-    &copy; 2024 Sky
-  </footer>
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <!-- Button Container -->
+  <div class="w3-center">
+    <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-right">Previous</button>
+    <button class="w3-button w3-black w3-padding-large">Next »</button>
+  </div>
+
+  <!-- Copyright -->
+  <div class="w3-center w3-margin-top">&copy; Sky 2024</div>
+</footer>
 
 <!--script tag for BS javascript-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -9,9 +9,9 @@ from application.data import csvReader
 def home():
     return render_template('home.html', title='Home')
 
-@app.route('/meetTheTechGrads')
-def meetTheTechGrads():
-    return render_template('MeetTheTechGrads.html')
+@app.route('/meetTheGrads')
+def meetTheGrads():
+    return render_template('MeetTheGrads.html')
 
 @app.route('/meetTheRoles')
 def meetTheRoles():
