@@ -38,3 +38,6 @@ def register():
 def agile():
     return render_template('agile.html', title='Agile Methodologies')
 
+@app.route('/bigdecision')
+def bigdecision():
+    return render_template('the_big_decision.html', title='The Big Decision ')
