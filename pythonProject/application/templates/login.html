@@ -18,12 +18,13 @@
 </head>
 
 <body>
-    <div class="login-container">
+    <div class="login-container" >
         <h2>CCAMBan</h2>
-        <form action="{{ url_for('login') }}" method="post">
             <input type="text" name="username" placeholder="Enter Username" required>
             <input type="password" name="password" placeholder="Enter Password" required>
-            <input type="submit" value="Login">
+        <a href="/home">
+                <input type="submit"/>
+            </a>
         </form>
         <p>Don't have an account? <a href="/register">Sign up here</a>.</p>
     </div>

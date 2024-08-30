@@ -2,37 +2,121 @@
 
 {% block body_content %}
 <div class="container mt-5">
+  <!-- Hero Section -->
   <div class="row">
     <div class="col-12">
-      <h2>Agile Methodology</h2>
-      <p>Agile is a set of principles for software development under which requirements and solutions evolve through the collaborative effort of self-organizing and cross-functional teams. It promotes adaptive planning, evolutionary development, early delivery, continuous improvement, and encourages flexible responses to change.</p>
-      <img src="../static/Images/agile.png" alt="agile diagram" style="width:50%">
-      <h3>Roles in Agile</h3>
-      <ul>
-        <li><strong>Product Owner:</strong> The Product Owner represents the customer and ensures that the team is working on the right things from a business perspective.</li>
-        <li><strong>Scrum Master:</strong> The Scrum Master is responsible for ensuring the team follows Agile practices and removing any obstacles to the team's progress.</li>
-        <li><strong>Development Team:</strong> The team is made up of professionals who deliver the product increment. They are self-organizing and cross-functional.</li>
-      </ul>
-      <img src="../static/Images/Roles.png" alt="agile diagram" style="width:40%">
-      <h3>Scrum</h3>
-      <p>Scrum is a framework that helps teams work together. It encourages teams to learn through experiences, self-organize while working on a problem, and reflect on their wins and losses to continuously improve.</p>
-      <ul>
-        <li><strong>Sprint:</strong> A time-boxed period during which specific work has to be completed and made ready for review.</li>
-        <li><strong>Daily Scrum:</strong> A short daily meeting for the development team to discuss progress, challenges, and plan for the day.</li>
-        <li><strong>Sprint Review:</strong> A meeting at the end of the sprint to inspect the increment and adapt the product backlog if needed.</li>
-        <li><strong>Sprint Retrospective:</strong> A meeting at the end of each sprint where the team discusses what went well, what didn't, and how to improve.</li>
-      </ul>
-
-      <h3>Kanban</h3>
-      <p>Kanban is a visual framework for implementing Agile that focuses on the continuous delivery of work, ensuring that the team is not overburdened, and increasing efficiency by reducing bottlenecks in the workflow.</p>
-      <ul>
-        <li><strong>Kanban Board:</strong> A visual tool that shows work in various stages of the process, often using columns like 'To Do', 'In Progress', and 'Done'.</li>
-        <li><strong>Work In Progress (WIP) Limits:</strong> Limits set to the amount of work that can be in progress at any one time to help prevent bottlenecks.</li>
-        <li><strong>Continuous Delivery:</strong> The practice of frequently delivering working software, usually in small increments.</li>
-        <li><strong>Cycle Time:</strong> The time taken from the start of a task to its completion, which teams aim to reduce to improve efficiency.</li>
-      </ul>
-      <img src="../static/Images/Kanban.png" alt="Kanban board" style="width:50%">
+      <div class="text-center mb-5">
+        <h2 class="display-4">Agile Methodology</h2>
+        <p class="lead">Adaptive planning, early delivery, and continuous improvement for modern software development.</p>
+        <img src="../static/Images/agilebanner.png" alt="Agile banner" class="img-fluid mb-4" style="width:90%; max-height: 300px; object-fit: cover;">
+      </div>
     </div>
   </div>
+
+  <!-- Agile Principles Section -->
+  <div class="row">
+    <div class="col-12">
+      <div class="card mb-5">
+        <div class="card-body">
+          <h3 class="card-title text-center">What is Agile?</h3>
+          <p class="card-text">Agile is a set of principles for software development under which requirements and solutions evolve through the collaborative effort of self-organizing and cross-functional teams. It promotes adaptive planning, evolutionary development, early delivery, continuous improvement, and encourages flexible responses to change.</p>
+          <img src="../static/Images/agile.png" alt="Agile diagram" class="d-block mx-auto my-3" style="width:50%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Roles in Agile Section -->
+  <div class="row">
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title text-center">Product Owner</h4>
+          <p class="card-text">Represents the customer and ensures the team is working on the right things from a business perspective.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title text-center">Scrum Master</h4>
+          <p class="card-text">Ensures the team follows Agile practices and removes any obstacles to the team's progress.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title text-center">Development Team</h4>
+          <p class="card-text">A self-organizing, cross-functional team that delivers the product increment.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 text-center">
+      <img src="../static/Images/Roles.png" alt="Agile roles diagram" class="d-block mx-auto my-3" style="width:30%">
+    </div>
+  </div>
+
+  <!-- Scrum Section -->
+  <div class="row">
+    <div class="col-12">
+      <div class="card bg-light mb-5">
+        <div class="card-body">
+          <h3 class="card-title text-center">Scrum Framework</h3>
+          <p class="card-text text-center">Scrum helps teams work together, encouraging them to learn through experiences, self-organize, and continuously improve.</p>
+          <div class="row text-center">
+            <div class="col-md-3">
+              <h5>Sprint</h5>
+              <p>A time-boxed period to complete specific work ready for review.</p>
+            </div>
+            <div class="col-md-3">
+              <h5>Daily Scrum</h5>
+              <p>Short daily meetings to discuss progress and plan for the day.</p>
+            </div>
+            <div class="col-md-3">
+              <h5>Sprint Review</h5>
+              <p>A meeting to inspect the increment and adapt the product backlog if needed.</p>
+            </div>
+            <div class="col-md-3">
+              <h5>Sprint Retrospective</h5>
+              <p>A meeting at the end of each sprint to reflect on the process and improve.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kanban Section -->
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title text-center">Kanban Framework</h3>
+          <p class="card-text text-center">Kanban focuses on continuous delivery, reducing bottlenecks, and visualizing the workflow.</p>
+          <img src="../static/Images/Kanban.png" alt="Kanban board" class="d-block mx-auto my-3" style="width:50%">
+          <div class="row text-center">
+            <div class="col-md-3">
+              <h5>Kanban Board</h5>
+              <p>A visual tool to show work in various stages, like 'To Do', 'In Progress', and 'Done'.</p>
+            </div>
+            <div class="col-md-3">
+              <h5>WIP Limits</h5>
+              <p>Limits set to prevent bottlenecks by restricting work in progress.</p>
+            </div>
+            <div class="col-md-3">
+              <h5>Continuous Delivery</h5>
+              <p>Frequently delivering working software in small increments.</p>
+            </div>
+            <div class="col-md-3">
+              <h5>Cycle Time</h5>
+              <p>The time taken from the start to the completion of a task.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 {% endblock %}
