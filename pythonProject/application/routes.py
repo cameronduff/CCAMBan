@@ -29,3 +29,11 @@ def livingston():
 @app.route('/login')
 def login():
     return render_template('login.html')
+
+@app.route('/Osterly')
+def Osterly():
+    return render_template('Osterly.html', title='Osterly')
+
+@app.route('/Leeds')
+def Leeds():
+    return render_template('Leeds.html', title='Leeds')
