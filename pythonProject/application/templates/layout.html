@@ -27,8 +27,10 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">The Big Decision</a></li>
-              <li><a class="dropdown-item" href="#">Potential Roles</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('meetTheRoles') }}">Potential Roles</a></li>
               <li><a class="dropdown-item" href="#">Sage Advice from Previous Grads</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('meetTheTechGrads') }}">Meet The Tech Grads</a></li>
+              <li><a class="dropdown-item" href="#">Meet The Cyber Grads</a></li>
             </ul>
           </li>
             <li class="nav-item dropdown">
@@ -37,7 +39,7 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Agile Fundamentals</a></li>
-              <li><a class="dropdown-item" href="#">Quick Reference Terminology</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('sky_glossary') }}">Quick Reference Terminology</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -49,6 +51,9 @@
               <li><a class="dropdown-item" href="{{ url_for('livingston') }}">Livingston</a></li>
               <li><a class="dropdown-item" href="#">Leeds</a></li>
             </ul>
+          </li>
+          <li>
+            <a class="nav-link active" aria-current="page" href="{{ url_for('login') }}">Login</a>
           </li>
         </ul>
       </div>
