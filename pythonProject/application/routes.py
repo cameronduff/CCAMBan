@@ -12,6 +12,10 @@ def home():
 def meetTheGrads():
     return render_template('MeetTheGrads.html')
 
+@app.route('/meetTheStaff')
+def meetTheStaff():
+    return render_template('MeetTheStaff.html')
+
 @app.route('/meetTheRoles')
 def meetTheRoles():
     return render_template('MeetTheRoles.html')
