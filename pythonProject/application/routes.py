@@ -30,6 +30,7 @@ def livingston():
 def login():
     return render_template('login.html')
 
-@app.route('/TheBigDecision')
-def the_big_decision():
-    return render_template('the_big_decision.html',title='The Big Decision')
+@app.route('/register')
+def register():
+    return render_template('register.html')
+
