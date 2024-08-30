@@ -25,3 +25,7 @@ def sky_glossary():
 @app.route('/Livingston')
 def livingston():
     return render_template('Livingston.html', title='Livingston')
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
