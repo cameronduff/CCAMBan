@@ -6,7 +6,7 @@ from application.data import csvReader
 @app.route('/')
 @app.route('/home')
 def home():
-    return render_template('home.html', title='Home')
+    return render_template('home.html')
 
 @app.route('/meetTheGrads')
 def meetTheGrads():
@@ -24,7 +24,7 @@ def sky_glossary():
 
 @app.route('/Livingston')
 def livingston():
-    return render_template('Livingston.html', title='Livingston')
+    return render_template('Livingston.html')
 
 @app.route('/login')
 def login():
@@ -36,16 +36,16 @@ def register():
 
 @app.route('/agile')
 def agile():
-    return render_template('agile.html', title='Agile Methodologies')
+    return render_template('agile.html')
 
 @app.route('/bigdecision')
 def bigdecision():
-    return render_template('the_big_decision.html', title='The Big Decision ')
+    return render_template('the_big_decision.html')
 
-@app.route('/Osterly')
-def Osterly():
-    return render_template('Osterly.html', title='Osterly')
+@app.route('/Osterley')
+def Osterley():
+    return render_template('Osterley.html')
 
 @app.route('/Leeds')
 def Leeds():
-    return render_template('Leeds.html', title='Leeds')
+    return render_template('Leeds.html')

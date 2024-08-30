@@ -14,7 +14,15 @@ article,aside,details,figcaption,figure,footer,header,main,menu,nav,section {
 summary{
     display:list-item
 }
-
+.heading-gradient {
+  font-size: 3rem; /* Adjust size as needed */
+  font-weight: bold;
+  background: linear-gradient(90deg, #314FFC, #740BFA, #C133E0, #FC934C, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
 /* hyperlink styling */
 a{background-color:transparent}a:active,a:hover{outline-width:0}
 /* bold styling */
