@@ -296,3 +296,13 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   background-color: #666;
   color: white;
 }
+
+.image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+.image-row img {
+            width: 18%; /* Adjust the width as needed */
+            height: auto;
+            object-fit: cover;
+        }

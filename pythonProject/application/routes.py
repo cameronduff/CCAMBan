@@ -8,9 +8,9 @@ from application.data import csvReader
 def home():
     return render_template('home.html', title='Home')
 
-@app.route('/meetTheTechGrads')
-def meet_the_tech_grads():
-    return render_template('MeetTheTechGrads.html')
+@app.route('/meetTheGrads')
+def meetTheGrads():
+    return render_template('MeetTheGrads.html')
 
 @app.route('/meetTheRoles')
 def meet_the_roles():
@@ -25,3 +25,19 @@ def sky_glossary():
 @app.route('/Livingston')
 def livingston():
     return render_template('Livingston.html', title='Livingston')
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+@app.route('/register')
+def register():
+    return render_template('register.html')
+
+@app.route('/agile')
+def agile():
+    return render_template('agile.html', title='Agile Methodologies')
+
+@app.route('/bigdecision')
+def bigdecision():
+    return render_template('the_big_decision.html', title='The Big Decision ')
