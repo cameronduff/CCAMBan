@@ -12,9 +12,9 @@ def home():
 def meetTheGrads():
     return render_template('MeetTheGrads.html')
 
-@app.route('/meetTheRoles')
+@app.route('/meet_the_roles')
 def meet_the_roles():
-    return render_template('MeetTheRoles.html')
+    return render_template('meet_the_roles.html')
 
 @app.route('/skyGlossary')
 def sky_glossary():
