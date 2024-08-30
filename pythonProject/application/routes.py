@@ -34,3 +34,7 @@ def login():
 def register():
     return render_template('register.html')
 
+@app.route('/agile')
+def agile():
+    return render_template('agile.html', title='Agile Methodologies')
+
