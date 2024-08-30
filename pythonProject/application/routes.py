@@ -10,11 +10,11 @@ def home():
     return render_template('home.html', title='Home')
 
 @app.route('/meetTheTechGrads')
-def meetTheTechGrads():
+def meet_the_tech_grads():
     return render_template('MeetTheTechGrads.html')
 
 @app.route('/meetTheRoles')
-def meetTheRoles():
+def meet_the_roles():
     return render_template('MeetTheRoles.html')
 
 @app.route('/skyGlossary')
