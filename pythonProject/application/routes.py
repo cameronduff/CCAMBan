@@ -14,7 +14,7 @@ def meetTheGrads():
     return render_template('MeetTheGrads.html')
 
 @app.route('/meetTheRoles')
-def meetTheRoles():
+def meet_the_roles():
     return render_template('MeetTheRoles.html')
 
 @app.route('/skyGlossary')
