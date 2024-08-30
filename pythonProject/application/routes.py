@@ -10,17 +10,17 @@ def home():
 
 @app.route('/meetTheGrads')
 def meetTheGrads():
-    return render_template('MeetTheGrads.html')
+    return render_template('MeetTheGrads.html', title='Meet The Grads')
 
 @app.route('/meetTheRoles')
 def meetTheRoles():
-    return render_template('MeetTheRoles.html')
+    return render_template('MeetTheRoles.html', title='Potential Roles')
 
 @app.route('/skyGlossary')
 def sky_glossary():
     glossary_list = csvReader.read_csv('application/data/glossary.csv')
     tags = csvReader.find_tags('application/data/glossary.csv')
-    return render_template('SkyGlossary.html', glossary_list=glossary_list, tags=tags)
+    return render_template('SkyGlossary.html', glossary_list=glossary_list, tags=tags, title='Sky KnowledgeBank')
 
 @app.route('/Livingston')
 def livingston():
@@ -28,11 +28,11 @@ def livingston():
 
 @app.route('/login')
 def login():
-    return render_template('login.html')
+    return render_template('login.html', title='Login')
 
 @app.route('/register')
 def register():
-    return render_template('register.html')
+    return render_template('register.html', title='Register')
 
 @app.route('/agile')
 def agile():
