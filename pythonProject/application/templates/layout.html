@@ -19,22 +19,28 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Meet the Previous Grads
+                Choosing your rotation
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Technology Grads</a></li>
-              <li><a class="dropdown-item" href="#">Cyber Grads</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('meetTheRoles') }}">Potential Roles</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('meetTheTechGrads') }}">Previous Technology Grads</a></li>
+              <li><a class="dropdown-item" href="#">Previous Cyber Grads</a></li>
+              <li><a class="dropdown-item" href="#">The Big Decision</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sky Knowledge Bank</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">All you need to know about agile</a>
+
+               <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bootcamp Recep
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Agile Fundamentals</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('sky_glossary') }}">Quick Reference Key Terms</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -42,7 +48,7 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Osterley</a></li>
-              <li><a class="dropdown-item" href="#">Livingston</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('livingston') }}">Livingston</a></li>
               <li><a class="dropdown-item" href="#">Leeds</a></li>
             </ul>
           </li>
