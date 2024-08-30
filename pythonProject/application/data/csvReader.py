@@ -7,7 +7,9 @@ def read_csv(path):
     with open(path) as file:
         csv_file = csv.reader(file)
         for lines in csv_file:
-            csv_list.append(lines)
+            if len(lines) > 2:
+                lines[2:] = [' '.join(lines[2:])]
+                csv_list.append(lines)
 
     csv_list.sort()
     return csv_list
@@ -16,7 +18,13 @@ def read_csv(path):
 def find_tags(path):
     # instantiate an empty set
     tags_set = set()
-    csv_list = read_csv(path)
+    csv_list = []
+    with open(path) as file:
+        csv_file = csv.reader(file)
+        for lines in csv_file:
+            csv_list.append(lines)
+
+    csv_list.sort()
 
     # iterates over each element
     for item in csv_list:

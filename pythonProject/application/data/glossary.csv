@@ -1,6 +1,6 @@
 3CP,3rd party Content Provider,Content,Media
 3gp,3rd generation platform,Technology,Engineering
-3P,Third Party,Business Management,,
+3P,Third Party,Business,
 A la carte,TV channel which can be subscribed to on individual basis by DTH sub,Television,Broadcasting
 ABB,Automatic Broadcast Build,Technology,Engineering,
 ACE,Application for Capital Expenditure,Finance,Accounting
@@ -28,76 +28,76 @@ ATVEF,Advanced Television Enhancement Forum,Television,Broadcasting
 AUP,Acceptable Usage Policy,Legal/Regulatory
 AUS,Authentication Server,Internet,Networking
 AVI,Audio Video Interleaved,Technology,Engineering
-B2B,Business to Business,Business Management
+B2B,Business to Business,Business
 BACC,Broadcast Advertising Clearance Centre,Legal/Regulatory
-BACS,Business Availability Centre,Business Management
+BACS,Business Availability Centre,Business
 BARB,British Audience Research Bureau,Content,Media
-bau,Business As Usual,Business Management
+bau,Business As Usual,Business
 BB,Big Brother,Content,Media
 BBFC,British Board of Film Classification,Legal/Regulatory
 BBS,Broadband Streaming,Internet,Networking
 BCAP,Broadcast Committee of Advertising Practice,Legal/Regulatory
-BECTU,Broadcasting,Entertainment,Cinematograph,Theatre Union,Legal/Regulatory
-BI,Business Information,Business Management
+BECTU,Broadcasting,Entertainment,Cinematograph,Theatre,Legal/Regulatory
+BI,Business Information,Business
 BiB,British interactive Broadcasting Holdings Ltd,Television,Broadcasting
-BIS,Business Information System,Business Management
+BIS,Business Information System,Business
 Blogging,Frequent updates on the internet,Content,Media
 Bluecoat,Cache server,Technology,Engineering
-BOT,Build Operate Transfer,Business Management
+BOT,Build Operate Transfer,Business
 BPEL,Business Process Execution Language,Technology,Engineering
 BPI,British Phonographic Industry,Legal/Regulatory
-BPM,Business Process Management,Business Management
-BRM,Business Relationship Manager,Business Management
+BPM,Business Process Management,Business
+BRM,Business Relationship Manager,Business
 BSS,Broadcast Scheduling System,Technology,Engineering
 BTK,Buy To Keep,Sales,Marketing
 BTX,Broadcast Transmission (also BX),Technology,Engineering
 CA,Conditional Access,Technology,Engineering
 CA,Configuration Agent,Technology,Engineering
 DA,Delivery Agent,Technology,Engineering
-CA,Customer Advisor,Customer Service,Support
+CA,Customer Advisor,Customer,Support
 cache,Computer memory for high-speed retrieval of frequently used/requested data,Technology,Engineering
 CAM,Conditional Access Module,Technology,Engineering
 CAP,Committee of Advertising Practice,Legal/Regulatory
 CATV,Cable Television,Television,Broadcasting,
-CDD,Concept Definition Document,Business Management
+CDD,Concept Definition Document,Business
 CDN,Content Distribution Network (i.e. Limelight),Internet,Networking
 CDR,Call Data Record,Technology,Engineering
 CDR,Customer Data Replica,Technology,Engineering
-CEO,Chief Executive Officer,Business Management
+CEO,Chief Executive Officer,Business
 CEOP,Child Exploitation and Online Protection Centre,Legal/Regulatory
-CG,Customer Group,Customer Service,Support
+CG,Customer Group,Customer,Support
 CHOPS,Channels and Operations team,Television,Broadcasting
 Churn,Cancellation of Sky subscription,Sales,Marketing
-CIT,Customer & Interactive Technology,Customer Service,Support
+CIT,Customer & Interactive Technology,Customer,Support
 CLI,Call Line Identification,Technology,Engineering
 CMA,Content Management Application,Content,Media
-CMC,Call Management Centre,Customer Service,Support
+CMC,Call Management Centre,Customer,Support
 CMDB,Configuration Management Database,Technology,Engineering
 CMS,Content Management System,Content,Media
-CMS,Customer Management System,Customer Service,Support
+CMS,Customer Management System,Customer,Support
 COFDM,Coded Orthogonal Frequency Division Multiplexing,Technology,Engineering
-COO,Chief Operating Officer,Business Management
+COO,Chief Operating Officer,Business
 COPPA,Children’s Online Privacy Protection Act 1998,Legal/Regulatory
 CP,Content Provider (Content Partner),Content,Media
 CPA,Content Provider Agreement,Legal/Regulatory
 CPS,Central Processing System,Technology,Engineering
 CPU,Computer Power Unit,Technology,Engineering
-CRF,Change Request Form,Business Management
-CRM,Customer Relationship Management,Customer Service,Support
+CRF,Change Request Form,Business
+CRM,Customer Relationship Management,Customer,Support
 CSM,Cisco Switch Content Switching Module,Technology,Engineering
 CSR,Certificate Signing Request,Technology,Engineering
-CSR,Customer Support (Service) Representative,Customer Service,Support
+CSR,Customer Support (Service) Representative,Customer,Support
 CSS,Content Scrambling System,Technology,Engineering
 csv,Comma Separated Value (database export/import format file extension),Technology,Engineering
-CTO,Chief Technology Officer,Business Management
+CTO,Chief Technology Officer,Business
 DAB,Digital Audio Broadcast,Television,Broadcasting
 DAL,Dedicated Advertising Location (Mini DAL),Sales,Marketing
 DBS,Direct Broadcasting Satellite,Television,Broadcasting
-DCMS,Dept of Culture,Media and Sport,Legal/Regulatory
+DCMS,Dept of Culture,Media,Legal/Regulatory
 DCT,Digital Cable Television,Television,Broadcasting
 DDA,Disability Discrimination Act,Legal/Regulatory
 DMA,Digital Media Adaptor,Technology,Engineering
-DMS,Document Management System,Business Management
+DMS,Document Management System,Business
 DNS,Domain Name Server,Internet,Networking
 DOM,Document Object Model,Technology,Engineering
 DoS,Denial of Service,Internet,Networking
@@ -117,21 +117,21 @@ DVB-H,Digital Video Broadcast for Handhelds (EU standard),Television,Broadcastin
 DVB-MHP,Digital Video Broadcasting – Multimedia Home Platform,Television,Broadcasting
 DVI,Digital Visual Interface,Technology,Engineering
 DVR,Digital Video Recorder,Television,Broadcasting
-EARS,Extended Action Request System,Customer Service,Support
+EARS,Extended Action Request System,Customer,Support
 ECR,Electronic Control Room,Technology,Engineering
 ELSPA,Entertainment & Leisure Software Publishers Association,Legal/Regulatory
-EMEA,Europe Middle East and Africa,Business Management
+EMEA,Europe Middle East and Africa,Business
 EMV,Europay Mastercard Visa,Finance,Accounting
 EN,European Norm,Legal/Regulatory
 EPG,Electronic Programme Guide,Television,Broadcasting
-ERP,Enterprise Resource Planning,Business Management
+ERP,Enterprise Resource Planning,Business
 ETL,Extract Transform Load,Technology,Engineering
 ETSI,European Telecommunications Standards Institute,Legal/Regulatory
 EU,European Union,Legal/Regulatory
 EVDO,Evolution Data Optimised (US wireless broadband),Internet,Networking
 EVID,Ethernet Video Interface Device,Technology,Engineering
 Extranet,Private intranet extended to selected external users,Internet,Networking
-FAQ,Frequently Asked Questions,Customer Service,Support
+FAQ,Frequently Asked Questions,Customer,Support
 FCG,Field Change Guide,Technology,Engineering
 FDDI,Fibre Distributed Data Interface,Internet,Networking
 FEC,Forward Error Correction,Technology,Engineering
@@ -145,17 +145,17 @@ FSA,Financial Services Authority,Finance,Accounting
 FTP,File Transfer Protocol,Internet,Networking
 FWD,Forward,Technology,Engineering
 FX,Fox Extended,Content,Media
-FYI,For Your Information,Business Management
+FYI,For Your Information,Business
 GAAP,Generally Accepted Accounting Principles,Finance,Accounting
 GAL,Global Address List,Internet,Networking
-GANTT,A type of bar chart that illustrates a project schedule,Business Management
+GANTT,A type of bar chart that illustrates a project schedule,Business
 GB,Gigabyte,Technology,Engineering
 GDP,Gross Domestic Product,Finance,Accounting
 GDRP,General Data Protection Regulation,Legal/Regulatory
 GEC,General Entertainment Channel,Content,Media
 GIT,General Interactive Technology,Technology,Engineering
 GIS,Geographic Information System,Technology,Engineering
-GMS,Global Management System,Business Management
+GMS,Global Management System,Business
 GPON,Gigabit Passive Optical Network,Internet,Networking
 GPRS,General Packet Radio Service,Internet,Networking
 GPU,Graphics Processing Unit,Technology,Engineering
@@ -176,8 +176,8 @@ SDK,Software Development Kit,Technology,Engineering
 SEO,Search Engine Optimization,Sales,Marketing
 SFTP,Secure File Transfer Protocol,Internet,Networking
 SGML,Standard Generalized Markup Language,Technology,Engineering
-SLA,Service Level Agreement,Business Management
-SME,Small and Medium-sized Enterprises,Business Management
+SLA,Service Level Agreement,Business
+SME,Small and Medium-sized Enterprises,Business
 SMTP,Simple Mail Transfer Protocol,Internet,Networking
 SMS,Short Message Service,Internet,Networking
 SNMP,Simple Network Management Protocol,Internet,Networking
@@ -189,12 +189,12 @@ SSL,Secure Sockets Layer,Internet,Networking
 STB,Set-Top Box,Television,Broadcasting
 SWF,Shockwave Flash,Technology,Engineering
 TCP,Transmission Control Protocol,Internet,Networking
-TCP,IP,Transmission Control Protocol,Internet Protocol,Internet,Networking
+TCP,IP,Internet,Networking
 TDM,Time Division Multiplexing,Internet,Networking
 TFT,Thin Film Transistor,Technology,Engineering
 TLS,Transport Layer Security,Internet,Networking
 TMN,Telecommunications Management Network,Internet,Networking
-TOC,Table of Contents,Business Management
+TOC,Table of Contents,Business
 TOS,Terms of Service,Legal/Regulatory
 TPS,Transactions Per Second,Technology,Engineering
 UGC,User-Generated Content,Content,Media
@@ -202,14 +202,14 @@ UI,User Interface,Technology,Engineering
 URL,Uniform Resource Locator,Internet,Networking
 USB,Universal Serial Bus,Technology,Engineering
 UTP,Unshielded Twisted Pair,Technology,Engineering
-VAS,Value-Added Service,Business Management
+VAS,Value-Added Service,Business
 VDSL,Very-high-bit-rate Digital Subscriber Line,Internet,Networking
 VoD,Video on Demand,Television,Broadcasting
 VoIP,Voice over Internet Protocol,Internet,Networking
 VPN,Virtual Private Network,Internet,Networking
 VR,Virtual Reality,Technology,Engineering
 VSAT,Very Small Aperture Terminal,Television,Broadcasting
-WAN,Wide Area Network,Internet,Networking
+WAN,Wide Area Network,Internet,Networking,
 WAP,Wireless Application Protocol,Internet,Networking
 WEP,Wired Equivalent Privacy,Internet,Networking
 Wi-Fi,Wireless Fidelity,Internet,Networking
