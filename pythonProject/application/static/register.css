@@ -1,0 +1,75 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container {
+    background-color: blue;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column; /* Ensures form elements stack vertically */
+    gap: 15px; /* Adds space between form elements */
+}
+
+.register-container input[type="text"],
+.register-container input[type="password"],
+.register-container input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+.register-container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.register-container p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.register-container p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-container p a:hover {
+    text-decoration: underline;
+}

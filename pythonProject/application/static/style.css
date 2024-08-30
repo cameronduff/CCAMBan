@@ -273,6 +273,30 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     margin-bottom: 15px;
   }
 
+  .container {
+  overflow: hidden;
+}
+
+.filter {
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: table-row;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
 .image-row {
             display: flex;
             justify-content: space-between;
@@ -282,3 +306,42 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
             height: auto;
             object-fit: cover;
         }
+
+.step-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.filter {
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: table-row;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
