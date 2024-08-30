@@ -9,7 +9,7 @@ body {
 }
 
 .register-container {
-    background-color: white;
+    background-color: blue;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -24,15 +24,21 @@ body {
     color: #333;
 }
 
+.register-container form {
+    display: flex;
+    flex-direction: column; /* Ensures form elements stack vertically */
+    gap: 15px; /* Adds space between form elements */
+}
+
 .register-container input[type="text"],
 .register-container input[type="password"],
 .register-container input[type="email"] {
     width: 100%;
     padding: 12px;
-    margin: 10px 0;
     border: 1px solid #ced4da;
     border-radius: 5px;
     font-size: 16px;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
 }
 
 .register-container input[type="submit"] {
