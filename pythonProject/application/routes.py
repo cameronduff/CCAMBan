@@ -46,9 +46,9 @@ def agile():
 def bigdecision():
     return render_template('the_big_decision.html', title='The Big Decision ')
 
-@app.route('/Osterly')
-def Osterly():
-    return render_template('Osterly.html', title='Osterly')
+@app.route('/Osterley')
+def Osterley():
+    return render_template('Osterley.html', title='Osterley')
 
 @app.route('/Leeds')
 def Leeds():
