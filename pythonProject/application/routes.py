@@ -13,7 +13,7 @@ def meetTheGrads():
     return render_template('MeetTheGrads.html')
 
 @app.route('/meetTheRoles')
-def meet_the_roles():
+def meetTheRoles():
     return render_template('MeetTheRoles.html')
 
 @app.route('/skyGlossary')
