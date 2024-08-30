@@ -20,7 +20,7 @@ def meet_the_roles():
 def sky_glossary():
     glossary_list = csvReader.read_csv('application/data/glossary.csv')
     tags = csvReader.find_tags('application/data/glossary.csv')
-    return render_template('SkyGlossary.html', glossary_list=glossary_list)
+    return render_template('SkyGlossary.html', glossary_list=glossary_list, tags=tags)
 
 @app.route('/Livingston')
 def livingston():
