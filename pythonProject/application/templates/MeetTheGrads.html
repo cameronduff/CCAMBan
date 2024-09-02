@@ -6,9 +6,55 @@
       </div>
 
       <div class="row">
-<!--          Spacer column to center the blog section-->
-      <div class="col-1"></div>
-        <div class="col-10">
+          <div class="col-sm-10">
+            <p>Welcome to our "Meet the Graduates" page, where we proudly showcase the achievements and aspirations of our recent graduates. Here, you can explore the diverse stories of our alumni, each one highlighting their unique journeys, academic successes, and future ambitions. Discover how their experiences here have shaped their careers and lives beyond graduation.</p>
+          </div>
+
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Add your experience!
+            </button>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Add your experience!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+
+                      <div class="modal-body">
+                        <form>
+
+                            <div class="form-group" style="margin-bottom: 15px;">
+                              <label for="inputJobRole">Job role</label>
+                              <input type="text" class="form-control" id="inputJobRole" style="border-radius: 4px;">
+                            </div>
+
+                            <div class="form-group" style="margin-bottom: 15px;">
+                              <label for="inputName">Name</label>
+                              <input type="text" class="form-control" id="inputName" style="border-radius: 4px;">
+                            </div>
+
+                            <div class="form-group" style="margin-bottom: 15px;">
+                              <label for="inputJobDescription">Description of role</label>
+                              <textarea class="form-control" id="inputJobDescription" rows="4" style="border-radius: 4px;"></textarea>
+                            </div>
+
+                            <button style="padding: 15px; margin-top: 10px; margin-bottom: 10px; width: 100%;" type="submit" class="btn btn-primary btn-lg">Submit</button>
+
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+
             <!-- Blog for billy -->
             <div class="card">
               <div class="card-body">
@@ -101,33 +147,6 @@
                 <p class="card-text">The biggest lesson I have learnt from my time at Sky so far is probably the importance of going around and meeting people and learning about what all of the different teams do. This is first of all for the reason of building relationships with people from across the business but also so that you can understand why your team does what they do and how this links to the bigger picture.</p>
               </div>
             </div>
-            <hr>
-
-
-      <!-- Centered section -->
-      <div class="row justify-content-center">
-        <div class="col-8">
-          <div class="w3-card-4 w3-margin" style="background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px;">
-            <div class="w3-container">
-              <h3 style="border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">Add your experience!</h3>
-              <form>
-                <div class="form-group" style="margin-bottom: 15px;">
-                  <label for="inputJobRole">Job role</label>
-                  <input type="text" class="form-control" id="inputJobRole" style="border-radius: 4px;">
-                </div>
-                <div class="form-group" style="margin-bottom: 15px;">
-                  <label for="inputName">Name</label>
-                  <input type="text" class="form-control" id="inputName" style="border-radius: 4px;">
-                </div>
-                <div class="form-group" style="margin-bottom: 15px;">
-                  <label for="inputJobDescription">Description of role</label>
-                  <textarea class="form-control" id="inputJobDescription" rows="4" style="border-radius: 4px;"></textarea>
-                </div>
-                <button style="padding: 15px; margin-top: 10px; margin-bottom: 10px; width: 100%;" type="submit" class="btn btn-primary btn-lg">Submit</button>
-              </form>
-            </div>
-          </div>
         </div>
-      </div>
   </div>
 {% endblock %}
