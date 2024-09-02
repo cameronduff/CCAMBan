@@ -1,10 +1,10 @@
 {% extends "layout.html" %}
 {% block body_content %}
 
-    <h1 class="text-center">Sky Knowledge Bank</h1>
+    <h1 class="text-center"><strong>Sky Knowledge Bank</strong></h1>
 
     <div class="container-fluid text-center">
-        <!-- Will automate with backend -->
+        <div class="container">
         <input type="text" id="myInput" onkeyup="tableSearchFunction()" placeholder="Search for terms...">
 
         <div id="myBtnContainer">
@@ -15,8 +15,6 @@
             {% endif %}
           {% endfor %}
         </div>
-        
-        <div class="container">
           <table id="glossaryTable" class="table table-striped">
             <thead>
               <tr>

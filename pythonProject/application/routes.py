@@ -24,7 +24,7 @@ def meetTheRoles():
 def sky_glossary():
     glossary_list = csvReader.read_csv('application/data/glossary.csv')
     tags = csvReader.find_tags('application/data/glossary.csv')
-    return render_template('SkyGlossary.html', glossary_list=glossary_list, tags=tags, title='Sky KnowledgeBank')
+    return render_template('SkyGlossary.html', glossary_list=glossary_list, tags=tags)
 
 @app.route('/Livingston')
 def livingston():
