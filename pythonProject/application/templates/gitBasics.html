@@ -12,6 +12,7 @@
 
         <h2>Staging and Committing</h2>
         <br>
+        <p>When working in Git, or other version control systems, the concept of "saving" is a more nuanced process than saving in a word processor or other traditional file editing applications. The traditional software expression of "saving" is synonymous with the Git term "committing". A commit is the Git equivalent of a "save". Traditional saving should be thought of as a file system operation that is used to overwrite an existing file or write a new file. Alternatively, Git committing is an operation that acts upon a collection of files and directories.</p>
         <h3>Stage all untracked changes</h3>
         <p>The git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run git commit.</p>
         <p>To add all of your changes to the staging area, use the command:</p>
@@ -39,7 +40,24 @@
 
         <h3>Switch to a branch</h3>
         <p>To change to another branch, use the command:</p>
-        <p><code>git checkout &lt;your branch name&gt;</code></p>
+        <p><code>git checkout &lt;branch name&gt;</code></p>
+
+        <h3>Push a branch to a remote repository</h3>
+        <p>After creating a branch locally, you can push it to a remote repository if you are connected to one. To do so, use:</p>
+        <p><code>git push --set-upstream origin &lt;branch name&gt;</code></p>
+        <hr>
+
+        <h2>Accessing Changes</h2>
+        <p>In Git, you can access changes made by other collaborators on your repository.</p>
+
+        <h3>Download other collaborator's changes</h3>
+        <p>The git fetch command downloads commits, files, and refs from a remote repository into your local repo. Fetching is what you do when you want to see what everybody else has been working on. To do so, simply type</p>
+        <p><code>git fetch</code></p>
+
+        <h3>Update local repository</h3>
+        <p>The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content. Merging remote upstream changes into your local repository is a common task in Git-based collaboration work flows.</p>
+        <p><code>git pull</code></p>
+
     </div>
 </div>
 
