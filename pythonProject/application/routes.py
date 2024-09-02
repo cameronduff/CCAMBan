@@ -14,7 +14,7 @@ def meetTheGrads():
 
 @app.route('/meetTheStaff')
 def meetTheStaff():
-    return render_template('MeetTheStaff.html')
+    return render_template('MeetTheStaff.html', title='Meet The Staff')
 
 @app.route('/meetTheRoles')
 def meetTheRoles():
@@ -24,7 +24,7 @@ def meetTheRoles():
 def sky_knowledge_bank():
     glossary_list = csvReader.read_csv('application/data/glossary.csv')
     tags = csvReader.find_tags('application/data/glossary.csv')
-    return render_template('SkyKnowledgeBank.html', glossary_list=glossary_list, tags=tags)
+    return render_template('SkyKnowledgeBank.html', glossary_list=glossary_list, tags=tags, title='Sky Knowledge Bank')
 
 @app.route('/Livingston')
 def livingston():
@@ -53,3 +53,7 @@ def Osterley():
 @app.route('/Leeds')
 def Leeds():
     return render_template('Leeds.html', title='Leeds')
+
+@app.route('/gitBasics')
+def git_basics():
+    return render_template('gitBasics.html', title='Git Basics')
