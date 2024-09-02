@@ -20,11 +20,11 @@ def meetTheStaff():
 def meetTheRoles():
     return render_template('MeetTheRoles.html', title='Potential Roles')
 
-@app.route('/skyGlossary')
-def sky_glossary():
+@app.route('/skyKnowledgeBank')
+def sky_knowledge_bank():
     glossary_list = csvReader.read_csv('application/data/glossary.csv')
     tags = csvReader.find_tags('application/data/glossary.csv')
-    return render_template('SkyGlossary.html', glossary_list=glossary_list, tags=tags)
+    return render_template('SkyKnowledgeBank.html', glossary_list=glossary_list, tags=tags)
 
 @app.route('/Livingston')
 def livingston():
