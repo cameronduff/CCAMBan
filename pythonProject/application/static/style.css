@@ -23,6 +23,24 @@ summary{
   background-clip: text;
   color: transparent;
 }
+
+.accordion-button {
+      background: linear-gradient(to right, #314FFC, #740BF4, #C133E0, #FC934E);
+      color: white !important;
+      transition: background 5s ease;
+    }
+
+.accordion-button::after {
+      filter: brightness(0) invert(1);
+       transition: background 2s ease;/* change arrow colour */
+    }
+
+    .accordion-button:not(.collapsed) {
+      background: linear-gradient(to right, #FC934E, #C133E0, #740BF4, #314FFC); /* different gradient for active button */
+      color: white !important;
+      transition: background 2s ease;
+    }
+
 /* hyperlink styling */
 a{background-color:transparent}a:active,a:hover{outline-width:0}
 /* bold styling */
