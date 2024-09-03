@@ -1,6 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #f0f2f5;
+    background-color: #e0e0e0; /* Light silver-grey background */
     margin: 0;
     height: 100vh;
     display: flex;
@@ -9,44 +9,47 @@ body {
 }
 
 .register-container {
-    background-color: blue;
-    padding: 30px;
+    background-color: #f9f9f9; /* Lighter grey for the container */
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     text-align: center;
 }
 
 .register-container h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-weight: 700;
-    color: #333;
+    color: #333333; /* Dark grey for better contrast */
+    font-size: 24px;
 }
 
 .register-container form {
     display: flex;
-    flex-direction: column; /* Ensures form elements stack vertically */
-    gap: 15px; /* Adds space between form elements */
+    flex-direction: column;
+    gap: 20px; /* Increased gap for more spacing between input fields */
 }
 
 .register-container input[type="text"],
 .register-container input[type="password"],
 .register-container input[type="email"] {
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     border: 1px solid #ced4da;
     border-radius: 5px;
     font-size: 16px;
-    box-sizing: border-box; /* Ensures padding and border are included in width */
+    box-sizing: border-box;
+    background-color: #ffffff; /* White background for input fields */
+    color: #333333; /* Dark grey text */
 }
 
 .register-container input[type="submit"] {
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #6c757d; /* Grey button */
     color: white;
     font-size: 18px;
     font-weight: 700;
@@ -55,17 +58,17 @@ body {
 }
 
 .register-container input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #5a6268; /* Slightly darker grey on hover */
 }
 
 .register-container p {
     margin-top: 20px;
     font-size: 14px;
-    color: #555;
+    color: #333333; /* Dark grey text for better visibility */
 }
 
 .register-container p a {
-    color: #007bff;
+    color: #007bff; /* Blue links for better contrast */
     text-decoration: none;
     font-weight: 500;
 }
@@ -73,3 +76,6 @@ body {
 .register-container p a:hover {
     text-decoration: underline;
 }
+
+
+
