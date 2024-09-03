@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+{% block body_content %}
+
+
+  <div aria-live="polite" aria-atomic="true" class="position-relative">
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+      <!-- Toast -->
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+        <div class="toast-header">
+          <img src="../static/Images/persona.jpeg" style="width: 50px; height: 50px;" class="rounded me-2" alt="Icon">
+          <strong class="me-auto">Encouragement</strong>
+          <small>Just now</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hello, world! This is a toast message.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Array of encouragement messages
+      const messages = [
+        "You're stronger than you think. Keep pushing forward!",
+        "Every small step you take today brings you closer to your goal. Keep going!",
+        "Believe in yourself—you have the power to achieve amazing things!",
+        "Don't give up. The best is yet to come!",
+        "You have the courage to overcome any challenge that comes your way.",
+        "Your hard work and determination will pay off. Keep your head up!",
+        "Remember, progress is progress, no matter how small.",
+        "Stay positive, and don't let setbacks define you. You've got this!",
+        "You are capable of more than you know. Trust in your abilities!",
+        "Keep your focus, stay determined, and success will follow.",
+        "Challenges are opportunities in disguise. Embrace them!",
+        "You are doing great—keep up the amazing work!",
+        "Don't be afraid to dream big. You have what it takes to make it happen!",
+        "Every day is a new chance to make progress. Seize the day!",
+        "Your perseverance is inspiring. Keep moving forward!",
+        "Believe in the power of your dreams—they are within your reach.",
+        "You are resilient, and nothing can hold you back!",
+        "Your journey may be tough, but you are tougher. Keep going!",
+        "Stay patient, stay focused, and the results will come.",
+        "You are capable of handling whatever comes your way.",
+        "Trust the process, and keep pushing. Your efforts will be rewarded.",
+        "You have the strength to turn obstacles into opportunities.",
+        "Keep your spirit high, and remember how far you've come.",
+        "You are unstoppable when you believe in yourself. Keep shining!"
+      ];
+
+      // Array of Bootstrap color classes
+      const colors = [
+        "bg-primary", "bg-success", "bg-danger", "bg-warning", "bg-info",
+        "bg-secondary", "bg-dark", "bg-light", "bg-primary", "bg-success",
+        "bg-danger", "bg-warning", "bg-info", "bg-secondary", "bg-dark",
+        "bg-light", "bg-primary", "bg-success", "bg-danger", "bg-warning",
+        "bg-info", "bg-secondary", "bg-dark", "bg-light"
+      ];
+
+      // Get the toast element
+      const toastElement = document.getElementById('liveToast');
+      const toastBody = toastElement.querySelector('.toast-body');
+
+      // Configure the toast not to autohide
+      const toast = new bootstrap.Toast(toastElement, {
+        autohide: false
+      });
+
+      // Function to show toast with a new message and color
+      let counter = 0;
+      function showToast() {
+        if (counter < messages.length) {
+          toastBody.textContent = messages[counter];
+          // Set the background color for the toast
+          toastElement.className = `toast ${colors[counter]} text-white`;
+          toast.show();
+          counter++;
+        }
+      }
+
+      // Show the first toast immediately
+      showToast();
+
+      // Show the subsequent toasts every 10 seconds
+      setInterval(() => {
+        showToast();
+      }, 10000); // 10000ms = 10 seconds
+    });
+  </script>
+
+{% endblock %}
