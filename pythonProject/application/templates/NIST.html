@@ -1,0 +1,130 @@
+{% extends "layout.html" %}
+
+{% block body_content %}
+<div class="container mt-5">
+
+  <!-- Hero Section -->
+  <div class="row">
+    <div class="col-12">
+      <div class="text-center mb-5">
+        <h1><strong>NIST Cybersecurity Framework 1.1</strong></h1>
+        <p class="lead">A comprehensive, voluntary framework that provides guidance for how private sector organizations in the United States can assess and improve their ability to prevent, detect, and respond to cyber attacks.</p>
+        <img src="../static/Images/NIST banner.jpg" alt="NIST Cybersecurity Framework 1.1" class="img-fluid mb-4" style="width:100%; height: auto; max-height: 400px; object-fit: cover; border-radius: 8px;">
+      </div>
+    </div>
+  </div>
+
+  <!-- Introduction Section -->
+  <div class="row">
+    <div class="col-12">
+      <div class="card mb-5">
+        <div class="card-body">
+          <h3 class="card-title text-center">What is the NIST Cybersecurity Framework?</h3>
+          <p class="card-text">The NIST Cybersecurity Framework (CSF) is a set of guidelines designed to help organizations better manage and reduce cybersecurity risk. Developed in response to a 2013 executive order, the framework assists in protecting critical infrastructure across the United States. The NIST CSF is flexible and can be integrated with existing security practices to enhance an organization's cybersecurity posture.</p>
+          <img src="../static/Images/NIST framework 1.1.png" alt="NIST Cybersecurity Framework" class="d-block mx-auto my-3 img-fluid" style="max-width: 60%; border-radius: 8px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core Functions Section -->
+  <div class="row">
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title text-center">Identify</h4>
+          <p class="card-text">Identify and manage cybersecurity risks to systems, assets, data, and capabilities. This function is foundational for a robust risk management strategy.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title text-center">Protect</h4>
+          <p class="card-text">Implement safeguards to ensure critical infrastructure services can be delivered. The Protect function helps limit or contain the impact of potential cybersecurity events.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title text-center">Detect</h4>
+          <p class="card-text">Develop and implement appropriate activities to identify the occurrence of a cybersecurity event promptly, ensuring that threats are detected quickly and effectively.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title text-center">Respond</h4>
+          <p class="card-text">Respond appropriately to a detected cybersecurity event. This function includes developing and implementing response activities to contain the impact of a cybersecurity incident.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title text-center">Recover</h4>
+          <p class="card-text">Maintain plans for resilience and restore any capabilities or services impaired due to a cybersecurity event. The Recover function ensures business continuity.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 text-center">
+    </div>
+  </div>
+
+  <!-- Implementation Tiers Section -->
+  <div class="row">
+    <div class="col-12">
+      <div class="card bg-light mb-5">
+        <div class="card-body">
+          <h3 class="card-title text-center">Implementation Tiers</h3>
+          <p class="card-text text-center">The NIST Cybersecurity Framework Implementation Tiers provide context on how an organization views cybersecurity risk and the processes in place to manage those risks. The tiers range from Partial (Tier 1) to Adaptive (Tier 4), reflecting an organization’s maturity in managing cybersecurity risks.</p>
+          <div class="row text-center">
+            <div class="col-md-3">
+              <h5>Tier 1: Partial</h5>
+              <p>Risk management practices are ad hoc and reactive, with no formalized process.</p>
+            </div>
+            <div class="col-md-3">
+              <h5>Tier 2: Risk-Informed</h5>
+              <p>Risk management practices are approved but not fully integrated into the organizational culture.</p>
+            </div>
+            <div class="col-md-3">
+              <h5>Tier 3: Repeatable</h5>
+              <p>Risk management practices are formalized and expressed as policy, enabling repeatable outcomes.</p>
+            </div>
+            <div class="col-md-3">
+              <h5>Tier 4: Adaptive</h5>
+              <p>Risk management practices are part of the organizational culture, with a strong emphasis on continuous improvement and adaptability.</p>
+            </div>
+          </div>
+          <img src="../static/Images/NIST Implementation tiers .jpg" alt="NIST Implementation Tiers" class="d-block mx-auto my-4 img-fluid" style="max-width: 60%; border-radius: 8px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NIST 1.1 vs NIST 2.0 Section -->
+  <div class="row">
+    <div class="col-12">
+      <div class="card bg-light mb-5">
+        <div class="card-body">
+          <h3 class="card-title text-center">Progression from NIST 1.1 to NIST 2.0</h3>
+          <p class="card-text">NIST Cybersecurity Framework 2.0 represents a significant update, reflecting the evolving landscape of cybersecurity. Here are some of the key changes and enhancements introduced in NIST 2.0:</p>
+          <ul>
+            <li><strong>Broader Scope:</strong> NIST 2.0 expands its scope to be more inclusive of various sectors and industries, offering a more universally applicable framework.</li>
+            <li><strong>Increased Emphasis on Governance:</strong> The new version places a greater emphasis on governance, highlighting the importance of organizational structure, policies, and the role of leadership in managing cybersecurity risks.</li>
+            <li><strong>Enhanced Focus on Supply Chain Risk Management:</strong> Recognizing the growing importance of supply chain security, NIST 2.0 introduces more comprehensive guidance on managing risks associated with third-party vendors and suppliers.</li>
+            <li><strong>Integration of Emerging Technologies:</strong> The framework now includes considerations for new and emerging technologies, such as cloud computing, artificial intelligence, and the Internet of Things (IoT), which have become integral to modern cybersecurity strategies.</li>
+            <li><strong>Updated Core Functions:</strong> While the core functions (Identify, Protect, Detect, Respond, Recover) remain, NIST 2.0 provides more detailed subcategories and outcomes, allowing for more granular implementation and measurement.</li>
+            <li><strong>Greater Alignment with International Standards:</strong> NIST 2.0 enhances its alignment with international cybersecurity standards, facilitating better global cooperation and compliance.</li>
+          </ul>
+          <img src="../static/Images/NIST 1.1 to 2.0.png" alt="NIST 1.1 vs NIST 2.0" class="d-block mx-auto my-4 img-fluid" style="max-width: 60%; border-radius: 8px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
+

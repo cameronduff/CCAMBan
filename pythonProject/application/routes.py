@@ -64,3 +64,7 @@ def git_basics():
 def notifications():
     return render_template('NewNotifications.html', title='Notifications')
 
+@app.route('/NIST')
+def NIST():
+    return render_template('NIST.html', title='NIST')
+
