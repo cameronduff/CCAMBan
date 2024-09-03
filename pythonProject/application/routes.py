@@ -1,9 +1,11 @@
-from flask import render_template
-
+from flask import render_template, redirect, url_for
 from application import app
 from application.data import csvReader
 
 @app.route('/')
+def index():
+    return redirect(url_for('login'))
+
 @app.route('/home')
 def home():
     return render_template('home.html', title='Home')
@@ -44,7 +46,7 @@ def agile():
 
 @app.route('/bigdecision')
 def bigdecision():
-    return render_template('the_big_decision.html', title='The Big Decision ')
+    return render_template('the_big_decision.html', title='The Big Decision')
 
 @app.route('/Osterley')
 def Osterley():
