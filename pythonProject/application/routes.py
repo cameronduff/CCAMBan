@@ -58,3 +58,7 @@ def Leeds():
 def git_basics():
     return render_template('gitBasics.html', title='Git Basics')
 
+@app.route('/NewNotifications')
+def notifications():
+    return render_template('NewNotifications.html', title='Notifications')
+
