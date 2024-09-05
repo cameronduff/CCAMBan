@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>{{title}}</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../static/style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<style>
-  .navbar-brand img {
-    height: 60px; /* Adjust as needed */
-    width: auto;
-  }
-</style>
+  <title>{{title}}</title> <!-- Page title, dynamically generated using a templating engine (e.g., Flask) -->
+  <meta charset="UTF-8"> <!-- Character encoding for the webpage -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures responsiveness on mobile devices -->
+
+  <!-- Linking to external CSS files for styling -->
+  <link rel="stylesheet" href="../static/style.css"> <!-- Custom styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> <!-- Google font -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!-- Bootstrap CSS -->
+
+  <!-- Bootstrap JS for interactivity and dynamic features -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <style>
+    .navbar-brand img {
+      height: 60px; /* Logo height */
+      width: auto;  /* Auto-adjust width based on height */
+    }
+  </style>
 </head>
 
 <body>
-<!--navbar for all webpages-->
+  <!-- Navbar for site-wide navigation -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
-      <!-- Image on the left -->
+      <!-- Brand logo on the left -->
       <a class="navbar-brand" href="#">
-        <img src="../static/Images/SkyBridge.png"  alt="Bridge Logo">
+        <img src="../static/Images/SkyBridge.png" alt="Bridge Logo"> <!-- Logo image -->
       </a>
 
+      <!-- Toggle button for mobile view (hamburger menu) -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Collapsible navigation menu -->
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
           </li>
+
+          <!-- Dropdown for 'Choosing Your Rotation' -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Choosing Your Rotation
+              Choosing Your Rotation
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{{ url_for('bigdecision') }}">The Big Decision</a></li>
@@ -43,7 +53,9 @@
               <li><a class="dropdown-item" href="#">Sage Advice from Previous Grads</a></li>
             </ul>
           </li>
-            <li class="nav-item dropdown">
+
+          <!-- Dropdown for 'Bootcamp Recap' -->
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Bootcamp Recap
             </a>
@@ -54,6 +66,8 @@
               <li><a class="dropdown-item" href="{{ url_for('NIST') }}">NIST</a></li>
             </ul>
           </li>
+
+          <!-- Dropdown for 'Sky Spaces' -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Sky Spaces
@@ -64,6 +78,8 @@
               <li><a class="dropdown-item" href="{{ url_for('Leeds') }}">Leeds</a></li>
             </ul>
           </li>
+
+          <!-- Dropdown for 'Sky Community' -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Sky Community
@@ -73,6 +89,8 @@
               <li><a class="dropdown-item" href="{{ url_for('meetTheStaff') }}">Meet The Staff</a></li>
             </ul>
           </li>
+
+          <!-- Dropdown for 'Useful Links' -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Useful Links
@@ -85,6 +103,8 @@
               <li><a class="dropdown-item" href="https://teams.microsoft.com/v2/?clientexperience=t2">Microsoft Teams</a></li>
             </ul>
           </li>
+
+          <!-- Login button -->
           <li>
             <a class="nav-link active" aria-current="page" href="{{ url_for('login') }}">Login</a>
           </li>
@@ -93,13 +113,14 @@
     </div>
   </nav>
 
-<!--adapts title for all webpages-->
-{% block body_content %}
-{% endblock %}
+  <!-- Placeholder for dynamic content unique to each page -->
+  {% block body_content %}
+  {% endblock %}
 
+  <!-- Toast notifications -->
   <div aria-live="polite" aria-atomic="true" class="position-relative">
     <div class="toast-container position-fixed top-0 end-0 p-3">
-      <!-- Toast -->
+      <!-- Toast message box -->
       <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
         <div class="toast-header">
           <img src="../static/Images/persona.jpeg" style="width: 50px; height: 50px;" class="rounded me-2" alt="Icon">
@@ -153,40 +174,50 @@
       "bg-info", "bg-secondary", "bg-dark", "bg-primary", "bg-success", "bg-danger"
     ];
 
-    // Get the toast element
+    // Get the toast element from the HTML page by its ID.
     const toastElement = document.getElementById('liveToast');
+
+    // Get the element where the message text will be inserted (the toast body).
     const toastBody = toastElement.querySelector('.toast-body');
 
-    // Configure the toast not to autohide
+    // Initialize the toast using Bootstrap's built-in functionality.
+    // `autohide: false` ensures that the toast won't automatically disappear.
     const toast = new bootstrap.Toast(toastElement, {
-      autohide: false
+      autohide: false // Keep toast visible until manually closed or hidden after a set time.
     });
 
-    // Function to show toast with a random message and color
+    // Function to show the toast with a random message and background color.
     function showToast() {
-      const randomIndex = Math.floor(Math.random() * messages.length); // Random index for the message
-      const randomColor = colors[randomIndex]; // Use the same index for the color
+      // Generate a random index based on the length of the `messages` array.
+      const randomIndex = Math.floor(Math.random() * messages.length);
 
+      // Select a random color from the `colors` array using the same index.
+      const randomColor = colors[randomIndex];
+
+      // Update the toast's body text with a randomly selected encouragement message.
       toastBody.textContent = messages[randomIndex];
-      // Set the background color for the toast
-      toastElement.className = `toast ${randomColor} text-white`;
+
+      // Update the background color of the toast using a Bootstrap class.
+      toastElement.className = `toast ${randomColor} text-white`; // Ensure the text is white for readability.
+
+      // Display the toast on the screen.
       toast.show();
 
-      // Hide the toast after 30 seconds
+      // Set a timer to automatically hide the toast after 30 seconds (30,000 milliseconds).
       setTimeout(() => {
-        toast.hide();
-      }, 30000); // 30000ms = 30 seconds
+        toast.hide(); // Hide the toast after the time expires.
+      }, 30000); // 30 seconds
     }
 
-    // Show the first toast after 10 seconds
+    // Show the first toast 10 seconds after the page has loaded.
     setTimeout(() => {
-      showToast();
+      showToast(); // Call the function to display the toast.
 
-      // Show subsequent toasts every 5 minutes
+      // Set an interval to display a new toast every 5 minutes (300,000 milliseconds).
       setInterval(() => {
-        showToast();
-      }, 300000); // 300000ms = 5 minutes
-    }, 10000); // 10000ms = 10 seconds
+        showToast(); // Show a new toast every 5 minutes.
+      }, 300000); // 5 minutes
+    }, 10000); // Initial delay of 10 seconds before the first toast appears.
   });
 </script>
 
