@@ -239,3 +239,21 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 body {
     padding-top: 65px;
 }
+
+
+.accordion-button {
+      background: linear-gradient(to right, #314FFC, #740BF4, #C133E0, #FC934E);
+      color: white !important;
+      transition: background 5s ease;
+    }
+
+.accordion-button::after {
+      filter: brightness(0) invert(1);
+       transition: background 2s ease;/* change arrow colour */
+    }
+
+    .accordion-button:not(.collapsed) {
+      background: linear-gradient(to right, #FC934E, #C133E0, #740BF4, #314FFC); /* different gradient for active button */
+      color: white !important;
+      transition: background 2s ease;
+    }
