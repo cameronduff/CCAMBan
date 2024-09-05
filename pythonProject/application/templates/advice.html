@@ -1,4 +1,120 @@
 {% extends "layout.html" %}
 {% block body_content %}
+  <div class="container">
+      <div class="text-center">
+        <h1><strong>Sage Advice</strong></h1>
+      </div>
 
+      <div class="row">
+          <div class="col-sm-10 text-center">
+            <p>Welcome to our "Sage Advice" page! Here, you'll find answers to your burning questions about. Find out how to put your best foot forward in your first rotation, how to build your network successfully at sky and make use of all the resources on offer</p>
+          </div>
+
+          <div class="col-sm-2 my-auto">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Add your advice!
+            </button>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Add your experience!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+
+                      <div class="modal-body">
+                        <form>
+                            <div class="form-group" style="margin-bottom: 15px;">
+                              <label for="inputJobRole">Headline</label>
+                              <input type="text" class="form-control" id="inputJobRole" style="border-radius: 4px;">
+                            </div>
+
+                            <div class="form-group" style="margin-bottom: 15px;">
+                              <label for="inputJobDescription">Advice</label>
+                              <textarea class="form-control" id="inputJobDescription" rows="4" style="border-radius: 4px;"></textarea>
+                            </div>
+
+                            <button style="padding: 15px; margin-top: 10px; margin-bottom: 10px; width: 100%;" type="submit" class="btn btn-primary btn-lg">Submit</button>
+
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+
+            <!-- Blog for associate software engineer -->
+             <div class="card border-secondary mb-3">
+                <div class="card-header">Your First Rotation</div>
+                <div class="card-body">
+                <h4 class="card-title"><b>Be Curious</b></h4>
+                <p class="card-text"><b>Ask Questions</b>: Don’t be afraid to ask questions. Everyone knows you’re new and they’ll appreciate your curiosity. Asking good questions shows you're engaged and eager to learn.</p>
+                <p class="card-text"><b>Take Notes</b>: Jot down key information, even if it seems small. It helps with retention and shows you're paying attention.</p>
+                  <br>
+                <h4 class="card-title"><b>Get to Know Your Team</b></h4>
+                <p class="card-text"><b>Introduce Yourself</b>: Take the initiative to introduce yourself to your teammates and other colleagues. You might feel nervous, but people will appreciate it.</p>
+                <p class="card-text"><b>Understand Team Dynamics</b>: Each team has its own way of working. Pay attention to how people communicate and collaborate to quickly adapt.</p>
+                <br>
+                  <h4 class="card-title"><b>Be Proactive</b></h4>
+                 <p class="card-text"><b>Take Ownership Early</b>: If you're assigned a task, take it seriously. If you're unsure how to proceed, clarify, but show that you're responsible and capable.</p>
+                 <p class="card-text"><b>Volunteer for Small Tasks</b>: If you see an opportunity to help out, jump in. It shows you’re willing to contribute and be part of the team.</p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Blog for product analyst -->
+            <div class="card border-secondary mb-3">
+                <div class="card-header">Best eats on Sky Osterley campus</div>
+                <div class="card-body">
+                    <p class="card-text"> The Pavilion is in between the hub and the innovation, and every few months they rotate what they serve. The chicken tenders are really great and the food is usually just £6.<p/>
+                    <p class="card-text"> The Garden is in Sky Central right as you walk in. You can choose your own options they usually have about 4-5 each day.
+                        <div class="card">
+                            <div class="card-header">
+                                Quote
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>"If you don't go for the french dressing you are a criminal"</p>
+                                    <footer class="blockquote-footer">Billy 2024 </footer>
+                                 </blockquote>
+                             </div>
+                        </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Blog for insight analyst -->
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-header">Best eats on Sky Osterley campus</div>
+                <div class="card-body">
+                  <h3 class="card-title"><b>Getting your Sky Benefits</b></h3>
+                    <p class="card-text"> As a sky employee you get free sky! You can choose between Sky Q and Sky stream, if you have a difficult landlord go for the sky stream. You also get 50% off mobile contract and a discount on your broadband.
+                    <p class="card-text"> You will be able to sign up your 5th week <a href="https://people.at.sky/skylife?sys_kb_id=59e69cfac3c816508ed1be3e0501318c&id=kb_article_view&sysparm_rank=1&sysparm_tsqueryId=ade28f4fc39052d05e91fdbb05013140">here</a>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Blog entry for product owner -->
+            <div class="card border-secondary mb-3">
+                <div class="card-header">Giving and receiving feedback</div>
+                <div class="card-body">
+                    <h4 class="card-title"><b>Stay Open and Receptive</b></h4>
+                    <p class="card-text">Feedback, especially constructive feedback, can be difficult to hear. Take a moment to listen and avoid reacting defensively. Stay calm and view feedback as an opportunity to grow rather than as criticism.</p>
+
+                    <h4 class="card-title"><b>Ask Clarifying Questions</b></h4>
+                    <p class="card-text">If feedback is unclear, ask follow-up questions to understand the context and specifics. For example, “Can you give me an example of when you think I could have communicated better in that meeting?”</p>
+
+                    <h4 class="card-title"><b>Don’t Take It Personally</b></h4>
+                    <p class="card-text">Feedback is about your work or actions, not you as a person. It’s easy to feel criticized, but try to separate the feedback from your identity. Focus on what you can learn from it rather than how it makes you feel in the moment.</p>
+
+                </div>
+            </div>
+            <hr>
+  </div>
 {% endblock %}

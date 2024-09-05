@@ -68,3 +68,6 @@ def notifications():
 def NIST():
     return render_template('NIST.html', title='NIST')
 
+@app.route('/advice')
+def advice():
+    return render_template('advice.html', title='Advice')
